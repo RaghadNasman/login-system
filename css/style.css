@@ -1,0 +1,63 @@
+/* global */
+:root {
+    --Pacifico-font: "Pacifico", cursive;
+    --Righteous-font: "Righteous", sans-serif;
+    --Caption-font: "PT Sans Caption", sans-serif;
+    --Bree-font: "Bree Serif", serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    background-color: #24353f;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: #24353f;
+}
+
+section {
+    box-shadow: 0 0 30px -5px rgba(0, 0, 0,.8);
+    width: 50%;
+}
+@media (max-width:992px) {
+    section {
+        width: 75%;
+    }
+    nav form button {
+        width: 100%;
+    }
+}
+@media (max-width:768px) {
+    section {
+        width: 100%;
+    }
+}
+form input::placeholder {
+    color: white !important;
+}
+form input:focus {
+    border-color: rgb(13, 202, 240) !important;
+}
+
+form button:hover {
+    color: white !important;
+}
+section p a:hover {
+    text-decoration: underline;
+}
